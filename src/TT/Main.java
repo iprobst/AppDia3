@@ -28,11 +28,12 @@ public class Main {
         sorter.sort(arr3, c);
         printArray(arr3);
 
-        Properties properties= new Properties();
+        //Properties properties= new Properties();
 
         try {
-            properties.load(new FileInputStream(new File("MiFactory.properties")));
-            sorter = (Sorter) MiFactory.getInstance((String) properties.get("sorter"));
+            //properties.load(new FileInputStream(new File("MiFactory.properties")));
+            //sorter = (Sorter) MiFactory.getInstance((String) properties.get("sorter"));
+            sorter = (Sorter) MiFactory.getInstance("sorter");
             Integer [] arr4 = {13, 4, 22, 5, 65, 14, 1, 145, 23};
             sorter.sort(arr4, c);
             printArray(arr4);

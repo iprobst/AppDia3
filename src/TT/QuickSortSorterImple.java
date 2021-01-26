@@ -33,7 +33,7 @@ public class QuickSortSorterImple implements Sorter{
         {
             // while((a[loc] <= a[right])) && ...
             while(c.compare(a[loc], a[right]) <= 0 && (loc!=right))
-                right--;
+                right -= 1;
             if(loc==right)
                 flag =1;
             //else if(a[loc]>a[right])
@@ -48,7 +48,7 @@ public class QuickSortSorterImple implements Sorter{
             {
                 //while((a[loc] >= a[left]) && (loc!=left))
                 while(c.compare(a[loc], a[left]) >= 0 && (loc!=left))
-                    left++;
+                    left += 1;
                 if(loc==left)
                     flag =1;
                 //else if(a[loc] <a[left])
